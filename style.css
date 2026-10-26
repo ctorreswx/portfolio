@@ -27,7 +27,8 @@
     --color-text-heading: #253139;
 
     --color-gradient: linear-gradient(95deg, #5B7A99, #1E2933, #3A7493);
-
+    
+    --color-outline: #10161c;
 
 }
 
@@ -42,9 +43,9 @@
 }
 
 *:focus-visible {
-  outline: 0.125rem solid var(--bg-tertiary);
+  outline: 0.125rem solid var(--color-outline);
   outline-offset: 0.2rem;
-  border-radius: 0.25rem;
+  border-radius: 1.25rem;
 }
 
 html {
@@ -69,7 +70,7 @@ header ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem;
+    padding: 0.825rem;
     background-color: var(--bg-secondary);
     position: sticky;
     top: 0;
@@ -421,10 +422,6 @@ footer a{
 @media screen and (min-width: 75rem) {
     .projectos-section ul {
       grid-template-columns: repeat(3, 1fr);
-    }
-   .contact-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     }
     .contact-section div p {
       margin: 1rem 0;
